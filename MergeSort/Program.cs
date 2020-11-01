@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-
-namespace MergeSort
-{
-    class Program
-    {
-        public void MergeSort(List<int> arry, int leftStart, int rightEnd, int[] temp)
+using System.IO;
+using System.Linq;
+class Solution {
+    
+    public void MergeSort(List<int> arry, int leftStart, int rightEnd, int[] temp)
         {
             if (leftStart >= rightEnd)
             {
@@ -22,7 +21,7 @@ namespace MergeSort
 
         }
 
-        public void MergeHalves(List<int> arry, int leftStart, int rightEnd, int[] temp)
+      public void MergeHalves(List<int> arry, int leftStart, int rightEnd, int[] temp)
         {
             int leftEnd = (leftStart + rightEnd) / 2;
             int rightStart = leftEnd + 1;
@@ -64,21 +63,33 @@ namespace MergeSort
                 rightEnd--;
             }
         }
+    
+    static void Main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+        
+        string Number = Console.ReadLine();
+        
+        int count = Convert.ToInt32(Number);
 
-        static void Main(string[] args)
-        {
-            List<int> arry = new List<int>() { 94,39,31,51,30,100,26,85,44,13,69,88,1,59,95,45,65,47,2,83,67,68,46,5,59,82,17,85,55,61,4,77,44,24,25,82,48,87,36,21,100,43,78,71,53,79,98,58,49,63,72,39,7,70,89,96,50,81,79,56,13,29,45,21,98,60,61,13,75,100,97,22,94,6,35,65,84,36,69,99,75,88,34,31,36,36,32,32,92,71,100,62,89,70,12,20,28,8,96,99};
-
-            int[] temp = new int[arry.Count];
-
-            new Program().MergeSort(arry, 0, arry.Count - 1, temp);
-
-            foreach (var item in temp)
+        var value = Console.ReadLine();
+        
+        List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+        
+        int[] temp = new int[count];
+        
+        
+        new Solution().MergeSort(arr,0,count-1,temp);
+        
+        Console.Write("[");
+        for(int i=0;i< count;i++)
+        {            
+            Console.Write(temp[i]);
+            if(i < count-1)
             {
-                Console.WriteLine(item);
+                Console.Write(",");
             }
-
-                                
         }
+        Console.Write("]");        
+        
     }
 }
