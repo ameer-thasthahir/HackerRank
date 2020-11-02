@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingCoins", "CountingCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumSwap", "MinimumSwap\MinimumSwap.csproj", "{051DDB4B-6A11-4615-BB50-31A8679E46B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulation", "ArrayManipulation\ArrayManipulation.csproj", "{2627373D-C097-4574-A2FA-E80988C2AF57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{051DDB4B-6A11-4615-BB50-31A8679E46B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{051DDB4B-6A11-4615-BB50-31A8679E46B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{051DDB4B-6A11-4615-BB50-31A8679E46B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2627373D-C097-4574-A2FA-E80988C2AF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2627373D-C097-4574-A2FA-E80988C2AF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2627373D-C097-4574-A2FA-E80988C2AF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2627373D-C097-4574-A2FA-E80988C2AF57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

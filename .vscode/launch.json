@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/MinimumSwap/bin/Debug/netcoreapp2.1/MinimumSwap.dll",
+            "program": "${workspaceFolder}/ArrayManipulation/bin/Debug/netcoreapp2.1/ArrayManipulation.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/MinimumSwap",
+            "cwd": "${workspaceFolder}/ArrayManipulation",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
